@@ -343,13 +343,17 @@
 [332,100,100,100]
         ]);
 
-      var options = {
+        var options = {
           title: 'AudioCut',
           hAxis: {title: 'Radios',  titleTextStyle: {color: 'black'}},
           vAxis: {minValue: 0},
           colors: ['green', 'blue', 'red'],
-          animation: {"startup": true} 
-        };
+          animation:{
+              startup: true,
+              duration: 3000,
+              easing: 'inAndOut',
+                    },
+          };
 
         var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
         chart.draw(data, options);
@@ -357,6 +361,6 @@
     </script>
   </head>
   <body>
-    <div id="chart_div" style="width: 100%; height: 500px;"></div>
+    <div id="chart_div" style="width: 100%; height: 300px;"></div>
   </body>
 </html>
