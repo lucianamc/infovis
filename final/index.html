@@ -343,12 +343,12 @@
 [332,100,100,100]
         ]);
 
-        var options = {
+      var options = {
           title: 'AudioCut',
           hAxis: {title: 'Radios',  titleTextStyle: {color: 'black'}},
           vAxis: {minValue: 0},
-          colors: ['green', 'blue', 'red']
-          
+          colors: ['green', 'blue', 'red'],
+          animation: {"startup": true} 
         };
 
         var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
